@@ -1,6 +1,6 @@
 import React from 'react'
 import { Header } from 'components'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
 
 // Containers
@@ -13,7 +13,9 @@ function Routes() {
     <Router>
       <Container>
         <Header />
-        <Route path="/" component={Home} />
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
       </Container>
     </Router>
   )

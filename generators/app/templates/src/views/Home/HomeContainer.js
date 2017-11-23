@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 import * as CounterActions from 'actions/counter'
 
 // Components
-import { Counter } from './components'
+import { Header, Counter } from './components'
 
 class CounterContainer extends React.Component {
   static propTypes = {
@@ -30,12 +30,15 @@ class CounterContainer extends React.Component {
 
   render() {
     return (
-      <Counter
-        counter={this.props.counter}
-        increment={this.increment}
-        decrement={this.decrement}
-        incrementIfOdd={this.incrementIfOdd}
-      />
+      <div>
+        <Header />
+        <Counter
+          counter={this.props.counter}
+          increment={this.increment}
+          decrement={this.decrement}
+          incrementIfOdd={this.incrementIfOdd}
+        />
+      </div>
     )
   }
 }

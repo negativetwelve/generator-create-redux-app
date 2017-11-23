@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import styled from 'styled-components'
 
 // Containers
-import Home from 'views/Home';
+import Home from 'views/Home'
 
 const Container = styled.div`text-align: center;`
 

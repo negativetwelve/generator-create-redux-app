@@ -111,14 +111,6 @@ const projectGenerator = Generator.extend({
       })
     },
   },
-
-  install() {
-    this.installDependencies({
-      npm: true,
-      bower: false,
-      yarn: true,
-    })
-  },
 })
 
 module.exports = projectGenerator
